@@ -1,1 +1,17 @@
+<<<<<<< HEAD
 <mxfile host="app.diagrams.net" modified="2022-11-07T09:29:45.191Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.106" version="20.5.3" etag="5AyapKyjo-cDxjNFpuxQ" type="github"><diagram id="Nde5B65JtnhSEAoVp0i3">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+=======
+<mxfile host="app.diagrams.net" modified="2022-11-07T09:31:38.009Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.106" etag="gNxpwWWCyHd5MaWS0BlU" version="20.5.3" type="github">
+  <diagram id="Nde5B65JtnhSEAoVp0i3" name="Page-1">
+    <mxGraphModel dx="997" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GHKyp3ss3STngFC_ncwl-1" value="Carré" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+>>>>>>> 1619005ff466d818a628a27f65b95c526a1e7a4d
