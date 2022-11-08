@@ -1,0 +1,15 @@
+_PRINTF
+
+SYNOPSYS
+#include "main.h"
+_printf(char *, ...)
+
+FORMAT
+%c - print un CARACTERE donné comme argument
+%s - print un STRING donné comme argument
+%% - print %
+%i - print un INTEGER donné comme argument
+%d - print un DECIMAL donné comme argument
+
+DESCRIPTION
+_Printf print la string reçu ainsi que certaines variables de la catégorie FORMAT.

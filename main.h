@@ -5,12 +5,21 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-typedef struct type {
-  char *type;
-  void (*f)(va_list ptr);
+
+
+/**
+ * struct type - struct for function call
+ * @type: letter
+ * @f: function
+ */
+
+typedef struct type
+{
+	char *type;
+	void (*f)(va_list ptr);
 } type_t;
 
-char *decimal_to_char(int num, char* str);
+char *decimal_to_char(int num, char *str);
 void _printc(va_list ptr);
 void _printpourcent(va_list ptr);
 void _printint(va_list ptr);

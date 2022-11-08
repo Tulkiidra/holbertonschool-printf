@@ -14,8 +14,7 @@ int _printf(const char *format, ...)
 		{"c", _printc},
 		{"%", _printpourcent},
 		{"i", _printint},
-		{"d", _printint},
-		{NULL, NULL}
+		{"d", _printint}
 	};
 
 	int i, j;
@@ -24,9 +23,9 @@ int _printf(const char *format, ...)
 
 	va_start(ptr, format);
 
-	for (i = 0 ; format[i] && format[i] != '\0' ; i++)
+	for (i = 0 ; format && format[i] != '\0' ; i++)
 	{
-		if (format[i] != '%')
+		if (format[i] != '%' && format[i] != '\0')
 			putchar(format[i]);
 		else
 		{
@@ -41,6 +40,8 @@ int _printf(const char *format, ...)
 			}
 		}
 	}
+	if (i != 0)
+		i--;
 	va_end(ptr);
 	return (i);
 }

@@ -10,8 +10,20 @@ void _prints(va_list ptr)
 	int i;
 	char *string = va_arg(ptr, char *);
 
-	for (i = 0 ; string[i] != '\0' ; i++)
-		putchar(string[i]);
+	if (string)
+	{
+		for (i = 0 ; string[i] != '\0' ; i++)
+			putchar(string[i]);
+	}
+	else
+	{
+		putchar('(');
+		putchar('n');
+		putchar('u');
+		putchar('l');
+		putchar('l');
+		putchar(')');
+	}
 }
 
 /**
