@@ -91,8 +91,9 @@ int _printint(va_list ptr)
 		return (10);
 	}
 
-
-	number = malloc(10);
+	number = malloc(11);
+	if (number == NULL)
+		free(number);
 
 	number = decimal_to_char(num, number);
 
