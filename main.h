@@ -10,7 +10,7 @@ typedef struct type {
   void (*f)(va_list ptr);
 } type_t;
 
-char* _itoa(int num, char* str, int base);
+char *decimal_to_char(int num, char* str);
 void _printc(va_list ptr);
 void _printpourcent(va_list ptr);
 void _printint(va_list ptr);

@@ -47,7 +47,7 @@ void _printint(va_list ptr)
 
 	number = malloc(10);
 
-	_itoa(num, number, 10);
+	number = decimal_to_char(num, number);
 
 	for (i = 0 ; number[i] != '\0' ; i++)
 	{
