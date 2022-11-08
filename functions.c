@@ -75,5 +75,5 @@ int _printint(va_list ptr)
 	}
 
 	free(number);
-	return (0);
+	return (i - 1);
 }

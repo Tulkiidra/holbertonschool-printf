@@ -12,8 +12,8 @@ int main(void)
 	int len, len2;
 
 
-	len = _printf("%");
-	len2 = printf("%");
+	len = _printf("%d", 1024);
+	len2 = printf("%d", 1024);
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
 	fflush(stdout);
