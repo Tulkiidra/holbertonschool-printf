@@ -39,6 +39,7 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
+			putchar('%');
 		}
 	}
 	i = i - decrem + stringlen;
