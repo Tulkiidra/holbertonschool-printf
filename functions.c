@@ -55,6 +55,26 @@ int _printpourcent(__attribute__((unused))va_list ptr)
 }
 
 /**
+ * _printINTMIN - print int-min
+ */
+
+void _printINTMIN(void)
+{
+	putchar('-');
+	putchar('2');
+	putchar('1');
+	putchar('4');
+	putchar('7');
+	putchar('4');
+	putchar('8');
+	putchar('3');
+	putchar('6');
+	putchar('4');
+	putchar('8');
+}
+
+
+/**
  * _printint - print int
  * @ptr: va list
  * Return: 1
@@ -64,6 +84,13 @@ int _printint(va_list ptr)
 {
 	int i, num = va_arg(ptr, int);
 	char *number;
+
+	if (num == INT_MIN)
+	{
+		_printINTMIN();
+		return (10);
+	}
+
 
 	number = malloc(10);
 

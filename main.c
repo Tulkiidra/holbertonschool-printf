@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+#include <limits.h>
 /**
  * main - Entry point
  *
@@ -11,9 +11,8 @@ int main(void)
 {
 	int len, len2;
 
-
-	len = _printf("%d", 1024);
-	len2 = printf("%d", 1024);
+	len = _printf("%d", INT_MIN);
+	len2 = printf("%d", INT_MIN);
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
 	fflush(stdout);

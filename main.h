@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <limits.h>
 
 /**
  * struct type - struct for function call
@@ -19,6 +19,7 @@ typedef struct type
 	int (*f)(va_list ptr);
 } type_t;
 
+void _printINTMIN(void);
 char *decimal_to_char(int num, char *str);
 int _printc(va_list ptr);
 int _printpourcent(va_list ptr);
