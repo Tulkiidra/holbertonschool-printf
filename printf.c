@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-			if (letterTest[j].type != NULL)
+			if (letterTest[j].type == NULL)
 				putchar('%');
 		}
 	}
