@@ -24,6 +24,7 @@ int _prints(va_list ptr)
 		putchar('l');
 		putchar('l');
 		putchar(')');
+		len = 6;
 	}
 	return (len - 1);
 }

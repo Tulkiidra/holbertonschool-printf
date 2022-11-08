@@ -14,15 +14,15 @@ int _printf(const char *format, ...)
 		{"c", _printc},
 		{"%", _printpourcent},
 		{"i", _printint},
-		{"d", _printint}
+		{"d", _printint},
+		{NULL, NULL}
 	};
-
-	int i, j, decrem = 0, stringlen = 0;
+	int i = 0, j = 0, decrem = 0, stringlen = 0;
 
 	va_list(ptr);
-
 	va_start(ptr, format);
-
+	if (format == NULL)
+		return (-1);
 	for (i = 0 ; format && format[i] != '\0' ; i++)
 	{
 		if (format[i] != '%' && format[i] != '\0')
@@ -31,12 +31,14 @@ int _printf(const char *format, ...)
 		{
 			for (j = 0 ; letterTest[j].type != NULL ; j++)
 			{
-				if (format[i + 1] == letterTest[j].type[0])
 				{
-					i++;
-					stringlen = (letterTest[j].f(ptr));
-					decrem++;
-					break;
+					if (format[i + 1] == letterTest[j].type[0])
+					{
+						i++;
+						stringlen = stringlen + (letterTest[j].f(ptr));
+						decrem++;
+						break;
+					}
 				}
 			}
 		}
