@@ -39,7 +39,8 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-			putchar('%');
+			if (letterTest[j].type != NULL)
+				putchar('%');
 		}
 	}
 	i = i - decrem + stringlen;
