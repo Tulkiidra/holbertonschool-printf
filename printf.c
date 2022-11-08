@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 		{"d", _printint}
 	};
 
-	int i, j;
+	int i, j, decrem = 0;
 
 	va_list(ptr);
 
@@ -35,13 +35,13 @@ int _printf(const char *format, ...)
 				{
 					letterTest[j].f(ptr);
 					i = i + 1;
+					decrem++;
 					break;
 				}
 			}
 		}
 	}
-	if (i != 0)
-		i--;
+	i = i - decrem;
 	va_end(ptr);
 	return (i);
 }
