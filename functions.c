@@ -3,17 +3,18 @@
 /**
  * _prints - print string
  * @ptr: va list
+ * Return: len of str
  */
 
-void _prints(va_list ptr)
+int _prints(va_list ptr)
 {
-	int i;
+	int len = 0;
 	char *string = va_arg(ptr, char *);
 
 	if (string)
 	{
-		for (i = 0 ; string[i] != '\0' ; i++)
-			putchar(string[i]);
+		for (len = 0 ; string[len] != '\0' ; len++)
+			putchar(string[len]);
 	}
 	else
 	{
@@ -24,35 +25,41 @@ void _prints(va_list ptr)
 		putchar('l');
 		putchar(')');
 	}
+	return (len - 1);
 }
 
 /**
  * _printc - print char
  * @ptr: va list
+ * Return: 1
  */
 
-void _printc(va_list ptr)
+int _printc(va_list ptr)
 {
 	putchar(va_arg(ptr, int));
+	return (1);
 }
 
 
 /**
  * _printpourcent - print pourcent
  * @ptr: va list
+ * Return: 1
  */
 
-void _printpourcent(__attribute__((unused))va_list ptr)
+int _printpourcent(__attribute__((unused))va_list ptr)
 {
 	putchar('%');
+	return (1);
 }
 
 /**
  * _printint - print int
  * @ptr: va list
+ * Return: 1
  */
 
-void _printint(va_list ptr)
+int _printint(va_list ptr)
 {
 	int i, num = va_arg(ptr, int);
 	char *number;
@@ -67,4 +74,5 @@ void _printint(va_list ptr)
 	}
 
 	free(number);
+	return (1);
 }

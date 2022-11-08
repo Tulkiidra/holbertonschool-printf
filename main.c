@@ -9,15 +9,16 @@
  */
 int main(void)
 {
-	int len, len2, a;
+	int len, len2;
 
-	len = _printf("%c", 'S');
-	len2 = printf("%c", 'S');
+	len = _printf("%s", "This sentence is retrieved from va_args!\n");
+	len2 = printf("%s", "This sentence is retrieved from va_args!\n");
+	_printf("Length:[%d, %i]\n", len, len);
+	printf("Length:[%d, %i]\n", len2, len2);
 	fflush(stdout);
 	if (len != len2)
 	{
-		a = len2 - len;
-		printf("%d\n", a);
+		printf("Lengths differ.\n");
 		fflush(stdout);
 		return (1);
 	}

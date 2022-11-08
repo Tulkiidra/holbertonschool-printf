@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 		{"d", _printint}
 	};
 
-	int i, j, decrem = 0;
+	int i, j, decrem = 0, stringlen = 0;
 
 	va_list(ptr);
 
@@ -33,15 +33,15 @@ int _printf(const char *format, ...)
 			{
 				if (format[i + 1] == letterTest[j].type[0])
 				{
-					letterTest[j].f(ptr);
-					i = i + 1;
+					i++;
+					stringlen = (letterTest[j].f(ptr));
 					decrem++;
 					break;
 				}
 			}
 		}
 	}
-	i = i - decrem;
+	i = i - decrem + stringlen;
 	va_end(ptr);
 	return (i);
 }

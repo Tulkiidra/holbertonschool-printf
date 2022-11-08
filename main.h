@@ -16,14 +16,14 @@
 typedef struct type
 {
 	char *type;
-	void (*f)(va_list ptr);
+	int (*f)(va_list ptr);
 } type_t;
 
 char *decimal_to_char(int num, char *str);
-void _printc(va_list ptr);
-void _printpourcent(va_list ptr);
-void _printint(va_list ptr);
-void _prints(va_list ptr);
+int _printc(va_list ptr);
+int _printpourcent(va_list ptr);
+int _printint(va_list ptr);
+int _prints(va_list ptr);
 int _printf(const char *format, ...);
 
 #endif
