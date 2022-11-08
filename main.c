@@ -11,8 +11,8 @@ int main(void)
 {
 	int len, len2;
 
-	len = _printf("%d", INT_MIN);
-	len2 = printf("%d", INT_MIN);
+	len = _printf("%");
+	len2 = printf("%");
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
 	fflush(stdout);

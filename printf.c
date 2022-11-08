@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 
 	va_list(ptr);
 	va_start(ptr, format);
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	for (i = 0 ; format && format[i] != '\0' ; i++)
 	{
@@ -31,14 +31,12 @@ int _printf(const char *format, ...)
 		{
 			for (j = 0 ; letterTest[j].type != NULL ; j++)
 			{
+				if (format[i + 1] == letterTest[j].type[0])
 				{
-					if (format[i + 1] == letterTest[j].type[0])
-					{
-						i++;
-						stringlen = stringlen + (letterTest[j].f(ptr));
-						decrem++;
-						break;
-					}
+					i++;
+					stringlen = stringlen + (letterTest[j].f(ptr));
+					decrem++;
+					break;
 				}
 			}
 		}
