@@ -11,8 +11,9 @@ int main(void)
 {
 	int len, len2;
 
-	len = _printf("%s", "This sentence is retrieved from va_args!\n");
-	len2 = printf("%s", "This sentence is retrieved from va_args!\n");
+
+	len = _printf("%c", 'S');
+	len2 = printf("%c", 'S');
 	_printf("Length:[%d, %i]\n", len, len);
 	printf("Length:[%d, %i]\n", len2, len2);
 	fflush(stdout);

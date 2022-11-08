@@ -37,7 +37,7 @@ int _prints(va_list ptr)
 int _printc(va_list ptr)
 {
 	putchar(va_arg(ptr, int));
-	return (1);
+	return (0);
 }
 
 
@@ -50,7 +50,7 @@ int _printc(va_list ptr)
 int _printpourcent(__attribute__((unused))va_list ptr)
 {
 	putchar('%');
-	return (1);
+	return (0);
 }
 
 /**
@@ -74,5 +74,5 @@ int _printint(va_list ptr)
 	}
 
 	free(number);
-	return (1);
+	return (0);
 }
