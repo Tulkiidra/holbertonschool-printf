@@ -17,16 +17,15 @@ int _printf(const char *format, ...)
 		{"d", _printint},
 		{NULL, NULL}
 	};
-
-	int i, j;
+	int i = 0, j = 0, decrem = 0, stringlen = 0;
 
 	va_list(ptr);
-
 	va_start(ptr, format);
-
-	for (i = 0 ; format[i] && format[i] != '\0' ; i++)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
+	for (i = 0 ; format && format[i] != '\0' ; i++)
 	{
-		if (format[i] != '%')
+		if (format[i] != '%' && format[i] != '\0')
 			putchar(format[i]);
 		else
 		{
@@ -34,12 +33,17 @@ int _printf(const char *format, ...)
 			{
 				if (format[i + 1] == letterTest[j].type[0])
 				{
-					letterTest[j].f(ptr);
-					i = i + 1;
+					i++;
+					stringlen = stringlen + (letterTest[j].f(ptr));
+					decrem++;
 					break;
 				}
 			}
+			if (letterTest[j].type == NULL)
+				putchar('%');
 		}
 	}
+	i = i - decrem + stringlen;
+	va_end(ptr);
 	return (i);
 }
