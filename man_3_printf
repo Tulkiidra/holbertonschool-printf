@@ -28,9 +28,9 @@ _printf("Alexandre a : %d ans, et il habite à %s", Age, Ville);
 
 int main (void){
 
-char name = "Alexandre";
+char *name = "Alexandre";
 int age = 82;
-char ville = "Shellcity" 
+char *ville = "Shellcity" 
 _printf("My name is %s, I am %d years old and I live in %s.\n", name, age, ville);
 }
 
