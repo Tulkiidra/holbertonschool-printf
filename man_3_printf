@@ -31,26 +31,24 @@ int main (void){
 char name = "Alexandre";
 int age = 82;
 char ville = "Shellcity" 
-_printf("He's name is %s, he has %d yearsold and he live in %s", name, age, ville);
+_printf("My name is %s, I am %d years old and I live in %s.\n", name, age, ville);
 }
 
 In this exemple you have in output : 
-"He's name is Alexandre, he has 82 yearsold and he live in Shellcity".  
+"My name is Alexandre, I am 82 yearsold and I live in Shellcity\n".  
 
 2 . 
 
 int main (void)
 
-char name = "Valentin"
+char *name = "Valentin"
+char cname = 'V'
 
-_printf("His name is %s and the first letter of this name is %c", name, name");
+_printf("My name is %s and the first letter of my name is %c\n", name, cname");
 }
 
 In this exemple you have in output :
-"His name is Valentin and the first letter of this name is V"
-
-.SH AUTOR
-Alexandre Guérin and Valentin Melia at Holberton School Toulouse
+"My name is Valentin and the first letter of my name is V\n"
 
 .SH DEDICACE
-Thanks Taieb CHAABINI being the best
+Taieb par pitié, je t'en supplies, valide notre manual
