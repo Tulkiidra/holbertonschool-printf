@@ -35,7 +35,7 @@ _printf("My name is %s, I am %d years old and I live in %s.\n", name, age, ville
 }
 
 In this exemple you have in output : 
-"My name is Alexandre, I am 82 yearsold and I live in Shellcity\n".  
+"My name is Alexandre, I am 82 years old and I live in Shellcity\n".  
 
 2 . 
 
