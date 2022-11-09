@@ -91,13 +91,6 @@ int _printint(va_list ptr)
 		return (10);
 	}
 
-	number = malloc(11);
-	if (number == NULL)
-	{
-		free(number);
-		return (0);
-	}
-
 	number = decimal_to_char(num, number);
 
 	for (i = 0 ; number[i] != '\0' ; i++)

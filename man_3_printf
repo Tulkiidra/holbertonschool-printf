@@ -1,15 +1,56 @@
+.TH _printf 3
+.SH NAME
 _PRINTF
+.SH SYNOPSYS
+.B #include "main.h"
 
-SYNOPSYS
-#include "main.h"
-_printf(char *, ...)
+int _printf(char *format, ...)
 
-FORMAT
-%c - print un CARACTERE donné comme argument
-%s - print un STRING donné comme argument
-%% - print %
-%i - print un INTEGER donné comme argument
-%d - print un DECIMAL donné comme argument
+.SH FORMAT
+c - print a char given as argument
 
-DESCRIPTION
-_Printf print la string reçu ainsi que certaines variables de la catégorie FORMAT.
+s - print a STRING given as argument
+
+% - print %
+
+i - print an INTEGER given as argument
+
+d - print a DECIMAL given as argument
+
+.SH DESCRIPTION
+_Printf print the string received as well as some variables of the FORMAT category.
+
+.SH SYNTAXE
+_printf("Alexandre a : %d ans, et il habite à %s", Age, Ville);
+
+.SH EXEMPLE
+1 .
+
+int main (void){
+
+char name = "Alexandre";
+int age = 82;
+char ville = "Shellcity" 
+_printf("He's name is %s, he has %d yearsold and he live in %s", name, age, ville);
+}
+
+In this exemple you have in output : 
+"He's name is Alexandre, he has 82 yearsold and he live in Shellcity".  
+
+2 . 
+
+int main (void)
+
+char name = "Valentin"
+
+_printf("His name is %s and the first letter of this name is %c", name, name");
+}
+
+In this exemple you have in output :
+"His name is Valentin and the first letter of this name is V"
+
+.SH AUTOR
+Alexandre Guérin and Valentin Melia at Holberton School Toulouse
+
+.SH DEDICACE
+Thanks Taieb CHAABINI being the best
