@@ -8,6 +8,7 @@ int _prints(va_list ptr)
 {
 	int len = 0;
 	char *string = va_arg(ptr, char *);
+
 	if (string)
 	{
 		for (len = 0 ; string[len] != '\0' ; len++)
@@ -71,6 +72,7 @@ int _printint(va_list ptr)
 {
 	int i, num = va_arg(ptr, int);
 	char *number;
+
 	if (num == INT_MIN)
 	{
 		_printINTMIN();
