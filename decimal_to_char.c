@@ -63,4 +63,4 @@ char *decimal_to_char(int num, char *str)
 	reverse_array(str, i);
 
 	return (str);
-
+}
