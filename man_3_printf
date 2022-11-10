@@ -20,10 +20,10 @@ d - print a DECIMAL given as argument
 .SH DESCRIPTION
 _Printf print the string received as well as some variables of the FORMAT category.
 
-.SH SYNTAXE
+.SH SYNTAX
 _printf("Alexandre a : %d ans, et il habite à %s", Age, Ville);
 
-.SH EXEMPLE
+.SH EXAMPLE
 1 .
 
 int main (void){
@@ -50,5 +50,8 @@ _printf("My name is %s and the first letter of my name is %c\n", name, cname");
 In this exemple you have in output :
 "My name is Valentin and the first letter of my name is V\n"
 
-.SH DEDICACE
+.SH COPYRIGHT
+Alexandre Guérin and Valentin Melia at Holberton School Toulouse
+
+.SH PLZ TAIEB
 Taieb par pitié, je t'en supplies, valide notre manual
