@@ -16,8 +16,6 @@ printf.c | Main part of the _ printf function that allows to get the length of t
 
 main.h | Header files
 
-main.c | File used as compatibility tests for the function _printf.
-
 man_3_printf | Man page of our function _printf.
 
 ____________________________________________________________________
