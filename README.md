@@ -1,37 +1,29 @@
-Summarize: 
+### Project Name: Custom printf Function (_printf)
 
-This project is about recreating the function printf. Printf sends an output to the standarts output by formatting the argument(s) passed in and converting the arguments(s) into a character string. This function will be called _printf.
+#### Summary:
+This project aims to recreate the functionality of the printf function in C. Printf is used to send formatted output to the standard output, converting arguments into character strings as necessary. In this project, the custom printf function is named _printf.
 
-____________________________________________________________________
+#### Files:
+1. **Flowchart Printf.drawio:** A flowchart illustrating the project's workflow, aiding collaboration.
+2. **decimal_to_char.c:** Converts decimal arguments (%d) into strings, ensuring compatibility.
+3. **functions.c:** Provides compatibility for various arguments (%s, %c, %i) in printf.
+4. **printf.c:** The core of the _printf function, determining output string length and invoking necessary functions from functions.c to handle arguments.
+5. **main.h:** Header files containing function prototypes and definitions.
+6. **man_3_printf:** Man page detailing the usage and functionality of the _printf function.
 
-What are every files :
-
-Flowchart Printf.drawio | it's the project flowchart, facilitating the group work.
-
-decimal_to_char.c | Function that allows %d arguments compatibility ; it can convert a decimal to a string.
-
-functions.c | Function that allow every arguments (%) compatibility (like %s, %c or %i).
-
-printf.c | Main part of the _ printf function that allows to get the length of the string in output and that calls every functions in function.c to use arguments in the string.
-
-main.h | Header files
-
-man_3_printf | Man page of our function _printf.
-
-____________________________________________________________________
-
-How to use _printf:
-
+#### How to Use _printf:
+```c
 #include <main.h>
 
-int main(void)
-{
-  _printf("Let's try to print %d simple sentence.\n", 1);
-  return (0):
- }
+int main(void) {
+    _printf("Let's try to print %d simple sentence.\n", 1);
+    return (0);
+}
+```
 
-____________________________________________________________________
+#### Note:
+The _printf function does not support some functionalities of the standard printf function.
 
-Note:
+---
 
-The _printf function does not support some printf functionalities.
+This enhanced README provides a concise overview of the project, its components, usage instructions, and limitations, facilitating better understanding and usage for developers.
