@@ -1,3 +1,5 @@
+![image](https://github.com/AlexandreGRN/holbertonschool-printf/assets/113857350/e7ef94e6-a90e-4ec2-8d87-4345dbf8b920)
+
 ### Project Name: Custom printf Function (_printf)
 
 #### Summary:
